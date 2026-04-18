@@ -38,7 +38,7 @@ README.md
 
 preprocess_to_caigen/data/raw_sentences.xlsx 파일을 열고 target_sentence 열에 문법 항목 주석 대상 문장을 넣습니다.  
 
-그 다음 터미널을 열고 명령어를 실행하기 위해 필요한 모듈을 설치합니다.   
+그 다음 파워쉘이나 터미널을 열고 명령어를 실행하기 위해 필요한 모듈을 설치합니다.   
 아래 명령어를 실행합니다. "(preprocess_to_caigen 폴더가 있는 위치)"에는 "preprocess_to_caigen"폴더가 있는 폴더의 위치를 기록합니다.  
 
 ```text
