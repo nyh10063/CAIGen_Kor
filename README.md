@@ -113,6 +113,6 @@ CharOffset
 스팬 작업의 총 결과가 `CharOffset`에서 나타납니다.
 
 주의  
-주석해야 하는 문장이 150개를 넘어가는 경우에 `createAndWriteSheets`를 실행한 직후에는 sample_annotator 파일의 시트 하단에서 문장이 계속 생성될 수 있습니다. 시트 생성이 충분히 끝난 뒤 주석을 시작하는 것을 권장합니다.  
+주석해야 하는 문장이 150개를 넘어가는 경우에는 `createAndWriteSheets`를 실행한 직후에 sample_annotator 파일의 시트 하단에서 문장이 계속 생성될 수 있습니다. 시트 생성이 충분히 끝난 뒤 주석을 시작하는 것을 권장합니다.  
 문장 수가 많으면 한 번에 끝나지 않을 수 있습니다. 이 경우 writeSheetsResume()를 실행하면 이어서 작성합니다.  
 Google Sheets 셀 길이 제한을 넘는 매우 긴 문장은 자동으로 건너뛰고 표시만 남길 수 있습니다.
