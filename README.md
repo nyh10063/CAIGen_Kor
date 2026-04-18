@@ -74,6 +74,9 @@ gs_files
 
 
 3. Google Apps Script 설치  
+
+아래 그림에서 CAIGen_Kor을 사용하여 실제로 스팬을 산출하는 방법을 볼 수 있습니다.  
+
 [https://script.google.com](https://script.google.com) 에서 새 프로젝트를 만듭니다.  
 
 기본으로 생성되는 Code.gs 파일의 내용을 지우고, 저희 깃 내에 보이는 CAIGen_Kor.gs 파일 내용을 그대로 붙여넣습니다.  
