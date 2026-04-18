@@ -11,6 +11,7 @@ CAIGen_Kor의 장점은 아래와 같습니다.
 2. 한 문장에 문법 항목이 여러 번 나타날 때나 하나의 문법 항목 구성 요소 사이에 다른 문법 항목이 나타나도 쉽게 스팬을 산출할 수 있습니다. 
 3. 구글드라이브를 사용하므로 연구자 간의 협업이 편리합니다.
 
+아래 그림에서 CAIGen_Kor을 사용하여 실제로 스팬을 산출하는 방법을 볼 수 있습니다.   
 
 ![alt text](/image/CAIGen_Kor.png)
 
@@ -33,6 +34,7 @@ README.md
 
 1. 노트북이나 데스크탑 컴퓨터에서 형태소 분석 실행  
 
+우선 이 깃허브 페이지의 상단에 초록색 `< >Code 버튼`을 클릭한 후 `Download ZIP`을 클릭하여 CAIGen_Kor의 필요 폴더와 파일을 모두 다운 받습니다. 
 preprocess_to_caigen/data/raw_sentences.xlsx 파일을 열고 target_sentence 열에 문법 항목 주석 대상 문장을 넣습니다.  
 
 그 다음 터미널을 열고 명령어를 실행하기 위해 필요한 모듈을 설치합니다.   
@@ -74,8 +76,6 @@ gs_files
 
 
 3. Google Apps Script 설치  
-
-아래 그림에서 CAIGen_Kor을 사용하여 실제로 스팬을 산출하는 방법을 볼 수 있습니다.   
 
 [https://script.google.com](https://script.google.com) 에서 새 프로젝트를 만듭니다.  
 
