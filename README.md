@@ -108,9 +108,11 @@ Apps Script 상단의 "디버그" 버튼 오른쪽에 "createAndWriteSheets"가 
 
 `sample_annotator`스프레드시트를 클릭하시면 안에는 아래 시트가 생성됩니다.  
 
+```text
 facesheet  
 upload_data  
 CharOffset  
+```
 
 주석 스팬 작업은 `upload_data` 시트에서 하시면 됩니다.  
 스팬 작업의 총 결과가 `CharOffset`에서 나타납니다.
