@@ -63,8 +63,10 @@ upload_data.json이 중요한 파일입니다. 형태소 분석 결과를 구글
 2. 구글드라이브 준비    
 구글드라이브에 CAIGen_Kor를 실행하고 싶은 폴더를 하나 만들고 그 안에 아래 두 폴더를 만듭니다.
 
-json_files
+```text
+json_files  
 gs_files
+```
 
 그 다음 1번에서 만들었던 preprocess_to_caigen/data/upload_data.json 파일을 방금 만들었던 json_files 폴더에 업로드합니다.
 
@@ -78,9 +80,12 @@ gs_files
 구글드라이브 루트 폴더 인터넷 주소가 "https://drive.google.com/drive/u/0/folders/1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP" 면 이 주소의 가장 마지막 부분인 "1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP" 가 루트 폴더 ID입니다. 
 
 ```text
-// Required: Google Drive folder ID that contains the json_files and gs_files folders.
-// Replace this placeholder with the actual folder ID from your Google Drive URL.
-var projectFolderId = "여기에 루트 폴더 ID를 복사 붙여넣기 해 주세요";
+/********************
+ 아래에 json_files, gs_files 폴더가 있는 이 프로그램 루트 폴더 ID를 입력해야 합니다.
+ 구글드라이브 루트 폴더 인터넷 주소가 "https://drive.google.com/drive/u/0/folders/1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP"면 이 주소의 가장 마지막 부부인 "1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP"가 루트 폴더 ID입니다. 
+ ********************/
+
+var projectFolderId = "1l4ANmP00pTLNW4UMeajK5DzXK19FrfYP";
 ```
 
 

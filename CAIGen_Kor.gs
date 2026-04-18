@@ -1,14 +1,5 @@
 /**************************************************
  * CAIGen_Kor.gs
- *
- * Public single-file Google Apps Script version.
- *
- * Quick start
- * 1. Paste this file into a new Google Apps Script project.
- * 2. Update the values in User Settings.
- * 3. Run createSheets().
- * 4. Run writeSheets().
- * 5. If execution stops midway, run writeSheetsResume().
  **************************************************/
 
 /********************
@@ -16,9 +7,7 @@
  구글드라이브 루트 폴더 인터넷 주소가 "https://drive.google.com/drive/u/0/folders/1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP"면 이 주소의 가장 마지막 부부인 "1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP"가 루트 폴더 ID입니다. 
  ********************/
 
-// Required: Google Drive folder ID that contains the json_files and gs_files folders.
-// Replace this placeholder with the actual folder ID from your Google Drive URL.
-var projectFolderId = "PASTE_YOUR_GOOGLE_DRIVE_FOLDER_ID_HERE";
+var projectFolderId = "여기에 루트 폴더 ID를 넣어 주세요.";
 
 /********************
  * Default Public Settings
