@@ -1,4 +1,4 @@
-# CAIGen_Kor 공개 실행 코드
+# CAIGen_Kor 사용법
 
 ## CAIGen_Kor 소개
 
@@ -19,6 +19,12 @@ CAIGen_Kor의 장점은 아래와 같습니다.
 
 ```text
 preprocess_to_caigen/
+  preprocess_to_caigen.py
+  requirements.txt
+  data/
+    raw_sentences.xlsx
+    tokenized_view.xlsx
+    upload_data.json
 CAIGen_Kor.gs
 README.md
 ```
@@ -29,18 +35,20 @@ README.md
 
 preprocess_to_caigen/data/raw_sentences.xlsx 파일을 열고 target_sentence 열에 문법 항목 주석 대상 문장을 넣습니다.
 
-그 다음 터미널을 열고 아래 명령어를 실행합니다. "(preprocess_to_caigen 폴더가 있는 위치)"에는 "preprocess_to_caigen"폴더가 있는 폴더의 위치를 기록합니다.
-
-```text
-cd "(preprocess_to_caigen 폴더가 있는 위치)/preprocess_to_caigen"
-python3 preprocess_to_caigen.py
-```
-
-이 명령에 사용할 기본 모듈이 설치되어 있지 않다면 터미널을 열고 아래 명령어를 실행하면 됩니다. 필요한 모듈들이 자동으로 설치됩니다.
+그 다음 터미널을 열고 명령어를 실행하기 위해 필요한 모듈을 설치합니다. 
+아래 명령어를 실행합니다. "(preprocess_to_caigen 폴더가 있는 위치)"에는 "preprocess_to_caigen"폴더가 있는 폴더의 위치를 기록합니다.
 
 ```text
 cd "(preprocess_to_caigen 폴더가 있는 위치)/preprocess_to_caigen"
 pip install -r requirements.txt
+```
+
+그 후에 문법 항목 주석 대상 문장들을 형태소 분석합니다. 
+아래 명령어를 실행합니다.
+
+```text
+cd "(preprocess_to_caigen 폴더가 있는 위치)/preprocess_to_caigen"
+python3 preprocess_to_caigen.py
 ```
 
 실행이 끝나면 아래 파일이 생성됩니다.
@@ -62,7 +70,7 @@ gs_files
 
 
 3. Google Apps Script 설치
-https://script.google.com 에서 새 프로젝트를 만듭니다.
+[https://script.google.com](https://script.google.com) 에서 새 프로젝트를 만듭니다.
 
 기본으로 생성되는 Code.gs 파일의 내용을 지우고, 저희 깃 내에 보이는 CAIGen_Kor.gs 파일 내용을 그대로 붙여넣습니다.
 
