@@ -2,14 +2,14 @@
 
 ## CAIGen_Kor 소개
 
-투고 논문 <언어 모델과 규칙을 활용한 한국어 문법 항목 자동 주석 연구>에서 스팬 자동 산출 목적으로 사용한 CAIGen_Kor를 소개한다.
-CAIGen_Kor은 Ide, Y. 외(2025:27007)의 CAIGen 주석 인터페이스를 한국어에 맞게 수정하였다. 
-기존 CAIGen에서는 스팬 자동 기록 기능은 없었지만 CAIGen_Kor는 한국어 형태소 분석기 Kiwi를 접목하여 문장에서 문법 항목을 선택하면 자동으로 스팬이 기록되게 업데이트하였다.
+이 깃허브 페이지는 투고 논문 <언어 모델과 규칙을 활용한 한국어 문법 항목 자동 주석 연구>에서 스팬 자동 산출 목적으로 사용한 CAIGen_Kor의 사용법을 소개합니다.
+CAIGen_Kor은 Ide, Y. 외(2025:27007)의 CAIGen 주석 인터페이스를 한국어에 맞게 수정하였습니다. 
+기존 CAIGen에서는 스팬 자동 기록 기능은 없었지만 CAIGen_Kor는 한국어 형태소 분석기 Kiwi를 접목하여 문장에서 문법 항목을 선택하면 자동으로 스팬이 기록되게 업데이트하였습니다.
 
-CAIGen_Kor의 장점은 아래와 같다.
-1. 불연속 문법 항목의 스팬을 쉽게 산출할 수 있다.
-2. 한 문장에 문법 항목이 여러 번 나타날 때나 하나의 문법 항목 구성 요소 사이에 다른 문법 항목이 나타나도 쉽게 스팬을 산출할 수 있다. 
-3. 구글드라이브를 사용하므로 연구자 간의 협업이 편리하다.
+CAIGen_Kor의 장점은 아래와 같습니다.
+1. 불연속 문법 항목의 스팬을 쉽게 산출할 수 있습니다.
+2. 한 문장에 문법 항목이 여러 번 나타날 때나 하나의 문법 항목 구성 요소 사이에 다른 문법 항목이 나타나도 쉽게 스팬을 산출할 수 있습니다. 
+3. 구글드라이브를 사용하므로 연구자 간의 협업이 편리합니다.
 
 
 ![alt text](/image/CAIGen_Kor.png)
@@ -67,7 +67,7 @@ https://script.google.com 에서 새 프로젝트를 만듭니다.
 기본으로 생성되는 Code.gs 파일의 내용을 지우고, 저희 깃 내에 보이는 CAIGen_Kor.gs 파일 내용을 그대로 붙여넣습니다.
 
 그후, 아래 내용에 연구자의 json_files, gs_files 폴더가 있는 이 프로그램 루트 폴더 ID를 입력해야 합니다.
-구글드라이브 루트 폴더 인터넷 주소가 "https://drive.google.com/drive/u/0/folders/1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP"면 이 주소의 가장 마지막 부부인 "1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP"가 루트 폴더 ID입니다. 
+구글드라이브 루트 폴더 인터넷 주소가 "https://drive.google.com/drive/u/0/folders/1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP" 면 이 주소의 가장 마지막 부분인 "1l4ANmPeksTLNW4UMdnvleDzXK19FrfYP" 가 루트 폴더 ID입니다. 
 
 ```text
 // Required: Google Drive folder ID that contains the json_files and gs_files folders.
@@ -94,10 +94,10 @@ facesheet
 upload_data
 CharOffset
 
-주석 스팬 작업은 "upload_data" 시트에서 하시면 됩니다.
-스팬 작업의 총 결과가 "CharOffset"에서 나타납니다.
+주석 스팬 작업은 `upload_data` 시트에서 하시면 됩니다.
+스팬 작업의 총 결과가 `CharOffset`에서 나타납니다.
 
 주의
-주석해야 하는 문장이 150개를 넘어가는 경우에 "createAndWriteSheets"를 실행한 직후에는 sample_annotator 파일의 시트 하단에서 문장이 계속 생성될 수 있습니다. 시트 생성이 충분히 끝난 뒤 주석을 시작하는 것을 권장합니다.
+주석해야 하는 문장이 150개를 넘어가는 경우에 `createAndWriteSheets`를 실행한 직후에는 sample_annotator 파일의 시트 하단에서 문장이 계속 생성될 수 있습니다. 시트 생성이 충분히 끝난 뒤 주석을 시작하는 것을 권장합니다.
 문장 수가 많으면 한 번에 끝나지 않을 수 있습니다. 이 경우 writeSheetsResume()를 실행하면 이어서 작성합니다.
 Google Sheets 셀 길이 제한을 넘는 매우 긴 문장은 자동으로 건너뛰고 표시만 남길 수 있습니다.
