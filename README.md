@@ -34,7 +34,8 @@ README.md
 
 1. 노트북이나 데스크탑 컴퓨터에서 형태소 분석 실행  
 
-우선 이 깃허브 페이지의 상단에 초록색 `< >Code 버튼`을 클릭한 후 `Download ZIP`을 클릭하여 CAIGen_Kor의 필요 폴더와 파일을 모두 다운 받습니다. 
+우선 이 깃허브 페이지의 상단에 초록색 `< >Code 버튼`을 클릭한 후 `Download ZIP`을 클릭하여 CAIGen_Kor의 필요 폴더와 파일을 모두 다운 받습니다  
+
 preprocess_to_caigen/data/raw_sentences.xlsx 파일을 열고 target_sentence 열에 문법 항목 주석 대상 문장을 넣습니다.  
 
 그 다음 터미널을 열고 명령어를 실행하기 위해 필요한 모듈을 설치합니다.   
@@ -104,9 +105,9 @@ Apps Script 상단의 "디버그" 버튼 오른쪽에 "createAndWriteSheets"가 
 
 5. 결과 확인  
 실행이 끝나면 구글드라이브 gs_files 폴더 안에 스프레드시트가 생성됩니다.  
-파일 이름은 `sample_annotator`로 생성됩니다.
+파일 이름은 `annotation_workbook`로 생성됩니다.
 
-`sample_annotator`스프레드시트를 클릭하시면 안에는 아래 시트가 생성됩니다.  
+`annotation_workbook`스프레드시트를 클릭하시면 안에는 아래 시트가 생성됩니다.  
 
 ```text
 facesheet  
@@ -121,3 +122,7 @@ CharOffset
 주석해야 하는 문장이 150개를 넘어가는 경우에는 `createAndWriteSheets`를 실행한 직후에 sample_annotator 파일의 시트 하단에서 문장이 계속 생성될 수 있습니다. 시트 생성이 충분히 끝난 뒤 주석을 시작하는 것을 권장합니다.  
 문장 수가 많으면 한 번에 끝나지 않을 수 있습니다. 이 경우 writeSheetsResume()를 실행하면 이어서 작성합니다.  
 Google Sheets 셀 길이 제한을 넘는 매우 긴 문장은 자동으로 건너뛰고 표시만 남길 수 있습니다.
+
+공개본 점검 환경:
+- Python 3.9.6
+- kiwipiepy 0.22.2
